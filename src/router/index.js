@@ -5,6 +5,9 @@ import Ebook from '@/Ebook';
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  base: '/web_dzs/',
+  scrollBehavior: () => ({ y: 0 }),
   routes: [
     {
       path: '/',
