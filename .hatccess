@@ -1,0 +1,8 @@
+ <IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /web_dzs/
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /web_dzs/index.html [L]
+</IfModule>
